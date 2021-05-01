@@ -3,13 +3,19 @@
     ViewBag.Title = "Show";
 }
 
-<a class="navlink" href="/Teacher/List">Back to Authors</a>
-<div id="container-show">
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/List">Back to Teachers</a>
+        <a class="dellink" href="/Teacher/DeleteConfirm/@Model.TeacherId">Delete</a>
+        <a class="navlink" href="/Teacher/Update/@Model.TeacherId">Update</a>
+    </nav>
+
     <h2>@Model.TeacherFname @Model.TeacherLname </h2>
     <h4>Teacher id: @Model.TeacherId</h4>
-    <h4>Hire date: @Model.HireDate</h4>
-    <h4>Salary: @Model.Salary</h4>
-    </div>
+    <h4>Hire date: @Model.TeacherHdate</h4>
+    <h4>Salary: @Model.TeacherSalary</h4>
+</div>
 
 
-      
+

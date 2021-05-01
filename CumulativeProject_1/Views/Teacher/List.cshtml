@@ -2,13 +2,21 @@
 @{
     ViewBag.Title = "List";
 }
-
-<div id="container-list">
+<div id="containerlist">
+    <nav>
+        <a class="navlink" href="/Teacher/New">New Teacher</a>
+    </nav>
+</div>
+<div id="containerlist">
     <h1>List of Teachers</h1>
+    <form action="/Teacher/List" method="GET">
+        <input type="text"name="SearchKey"/>
+        <input type="submit" value="search"/>
+    </form>
 
 @foreach (CumulativeProject_1.Models.Teacher teacher in Model)
 {
-    <div class="listitem row">
+    <div class="list_item">
     <div class="col-md-12"><a href="/Teacher/Show/@teacher.TeacherId">@teacher.TeacherFname @teacher.TeacherLname</a></div>
         </div> 
 }

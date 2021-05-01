@@ -16,9 +16,23 @@ textarea {
     max-width: 280px;
 }
 
-.navlink {
-    text-align: right;
-    margin-top: 30px;
-    float: right;
+nav{
+    overflow:hidden;
+    margin-bottom:30px;
 }
-
+.navlink {
+    float: left;
+    margin-right:15px;
+}
+.dellink{
+    float:right;
+    color: red;
+}
+ #containershow{
+    width:80%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.list_item{
+    margin: 10px 0;
+}
